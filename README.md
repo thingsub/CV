@@ -3,7 +3,7 @@
 거시적인 구조
 ```C++
 Mat g_imgColor;                    // 전역 이미지
-RNG g_rng(getTickCount());         // 랜덤 생성기
+RNG g_rng(getTickCount());         // 랜덤 생성기. 참고로 getTickCount()는 시스템 부팅 후 경과된 시간(틱 단위)
 Scalar randomColor(RNG &g_rng);    // 무작위 색 생성 함수
 void mouse_callback(...);          // 마우스 이벤트 콜백
 int main() { ... }                 // 메인 루프
